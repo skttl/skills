@@ -6,5 +6,6 @@ Skills are grouped by category. Each skill directory contains a `SKILL.md` file 
 
 | Category | Skills |
 | --- | --- |
+| [codebase](codebase/) | [git-history-audit](codebase/git-history-audit/), [legacy-codebase-audit](codebase/legacy-codebase-audit/) |
 | [frontend](frontend/) | [alpinejs](frontend/alpinejs/), [htmx-alpinejs](frontend/htmx-alpinejs/), [htmx](frontend/htmx/) |
 | [umbraco](umbraco/) | [umbraco-package-scaffold](umbraco/umbraco-package-scaffold/) |

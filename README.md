@@ -8,6 +8,8 @@ This repository is structured as a general skill collection. Each skill lives in
 
 | Category | Skill | Description |
 | --- | --- | --- |
+| Codebase | [git-history-audit](skills/codebase/git-history-audit/) | Audit Git history for churn hotspots, ownership concentration, bug clusters, activity trends, and firefighting patterns before reading code. |
+| Codebase | [legacy-codebase-audit](skills/codebase/legacy-codebase-audit/) | Audit unfamiliar or legacy codebases across languages and frameworks to map risk, architecture, tests, operations, and first actions. |
 | Frontend | [alpinejs](skills/frontend/alpinejs/) | Best-practice Alpine.js guidance for progressively enhanced, server-rendered interfaces. |
 | Frontend | [htmx-alpinejs](skills/frontend/htmx-alpinejs/) | Best-practice guidance for combining htmx server updates with Alpine.js local UI state. |
 | Frontend | [htmx](skills/frontend/htmx/) | Best-practice htmx guidance for server-rendered, hypermedia-driven interfaces. |
@@ -50,6 +52,8 @@ For a manual user-level installation, copy each skill directory into your Codex 
 
 ```powershell
 New-Item -ItemType Directory -Force $env:USERPROFILE\.codex\skills
+Copy-Item -Recurse .\skills\codebase\git-history-audit $env:USERPROFILE\.codex\skills\git-history-audit
+Copy-Item -Recurse .\skills\codebase\legacy-codebase-audit $env:USERPROFILE\.codex\skills\legacy-codebase-audit
 Copy-Item -Recurse .\skills\frontend\alpinejs $env:USERPROFILE\.codex\skills\alpinejs
 Copy-Item -Recurse .\skills\frontend\htmx-alpinejs $env:USERPROFILE\.codex\skills\htmx-alpinejs
 Copy-Item -Recurse .\skills\frontend\htmx $env:USERPROFILE\.codex\skills\htmx
@@ -70,6 +74,8 @@ For a manual user-level installation, copy each skill directory into your Claude
 
 ```bash
 mkdir -p ~/.claude/skills
+cp -R skills/codebase/git-history-audit ~/.claude/skills/git-history-audit
+cp -R skills/codebase/legacy-codebase-audit ~/.claude/skills/legacy-codebase-audit
 cp -R skills/frontend/alpinejs ~/.claude/skills/alpinejs
 cp -R skills/frontend/htmx-alpinejs ~/.claude/skills/htmx-alpinejs
 cp -R skills/frontend/htmx ~/.claude/skills/htmx
@@ -86,6 +92,14 @@ For agents that support the `SKILL.md` convention, copy the skill directory you 
 
 ```text
 skills/
+  codebase/
+    git-history-audit/
+      SKILL.md
+      README.md
+    legacy-codebase-audit/
+      SKILL.md
+      README.md
+      references/
   frontend/
     alpinejs/
       SKILL.md
