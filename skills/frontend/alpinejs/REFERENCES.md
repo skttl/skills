@@ -1,0 +1,26 @@
+# Alpine.js Best Practices References
+
+- Official Alpine.js docs: https://alpinejs.dev/start-here
+- Alpine.data docs: https://alpinejs.dev/globals/alpine-data
+- Alpine.store docs: https://alpinejs.dev/globals/alpine-store
+- Alpine plugin docs: https://alpinejs.dev/plugins/mask
+- Alpine plugin docs: https://alpinejs.dev/plugins/intersect
+- Alpine plugin docs: https://alpinejs.dev/plugins/resize
+- Alpine plugin docs: https://alpinejs.dev/plugins/persist
+- Alpine plugin docs: https://alpinejs.dev/plugins/focus
+- Alpine plugin docs: https://alpinejs.dev/plugins/collapse
+- Alpine plugin docs: https://alpinejs.dev/plugins/anchor
+- Alpine plugin docs: https://alpinejs.dev/plugins/morph
+- Alpine plugin docs: https://alpinejs.dev/plugins/sort
+- Alpine Collective awesome list: https://github.com/alpine-collective/awesome
+- Alpine.js tips and tricks for Laravel developers: https://dev.to/harold_defree/alpinejs-tips-tricks-for-and-from-and-entry-level-laravel-developers-213c
+- Alpine.js beginner to advanced: https://www.amirkamizi.com/blog/alpinejs-beginner-to-advanced-2025
+- Alpine stores usage guide: https://alpinedevtools.com/blog/stores-usage-guide
+- Alpine.js lightweight framework overview: https://innostax.com/blog/alpine-js-a-lightweight-javascript-framework-for-modern-web-development/
+- Encapsulating Alpine.js logic: https://nicopetri.hashnode.dev/how-do-i-encapsulate-my-alpinejs-logic
+- Django, HTMX, and Alpine.js notes: https://dev.to/nicholas_moen/what-i-learned-while-using-django-with-htmx-and-alpine-js-24jg
+- Alpine.js community discussion: https://www.reddit.com/r/webdev/comments/1gzpys0/alpinejs/
+- Smashing Magazine Alpine.js introduction: https://www.smashingmagazine.com/2020/03/introduction-alpinejs-javascript-framework/
+- Select2 integration with Alpine.js: https://codewithhugo.com/alpinejs-jquery-plugin-integration-select2/
+- Accessible modal with Alpine.js: https://dberri.com/lets-build-an-accessible-modal-with-alpine-js/
+- Alpine Toolbox extensions: https://www.alpinetoolbox.com/dist/extensions/

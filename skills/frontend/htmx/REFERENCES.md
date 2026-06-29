@@ -1,0 +1,26 @@
+# htmx Best Practices References
+
+- Official htmx docs: https://htmx.org/docs/
+- Official htmx server examples: https://htmx.org/server-examples/
+- Official htmx web security basics: https://htmx.org/essays/web-security-basics-with-htmx/
+- htmx 4 requests and responses docs: https://four.htmx.org/docs/core-concepts/requests-and-responses
+- Hypermedia Systems, More htmx Patterns: https://hypermedia.systems/more-htmx-patterns/
+- Less htmx is More: https://unplannedobsolescence.com/blog/less-htmx-is-more/
+- Why Most Developers Are Using HTMX Badly: https://hexshift.medium.com/why-most-developers-are-using-htmx-badly-21a01e3223b3
+- HTMX Best Practices: Building Responsive Web Apps Without JavaScript Frameworks: https://dev.to/hexshift/htmx-best-practices-building-responsive-web-apps-without-javascript-frameworks-25dm
+- The Case for HTMX: Rethinking Modern Web Architecture: https://medium.com/@paulhoke/the-case-for-htmx-rethinking-modern-web-architecture-1e6772cf0c74
+- HTMX - Rethinking the SPA: https://dev.to/robodobdob/htmx-rethinking-the-spa-2fn2
+- htmx vs React: When Hypermedia Beats JavaScript Frameworks: https://daily.dev/blog/htmx-vs-react-when-hypermedia-beats-javascript-frameworks/
+- Creating server-driven web apps with htmx: https://blog.logrocket.com/htmx-server-driven-web-apps/
+- How to Build Lightweight, Server-Driven Web Apps with htmx: https://strapi.io/blog/build-server-driven-web-apps-with-htmx
+- HTMX vs React: Why 14KB Beats 200KB+ JavaScript Bundles: https://strapi.io/blog/htmx-lightweight-alternative-javascript-frameworks
+- The Complete HTMX Guide: From Zero to Production: https://singhajit.com/htmx-guide-modern-web-development/
+- The Silent Rise of HTMX: Are SPAs Overkill Now?: https://medium.com/@kaushalsinh73/the-silent-rise-of-htmx-are-spas-overkill-now-9fe02fb1e2c2
+- Reddit: Examples of well-structured non-trivial htmx-based projects: https://www.reddit.com/r/htmx/comments/15w7xy3/examples_of_wellstructured_nontrivial_htmxbased/
+- Reddit: Best practice for handling routes with htmx and non-htmx requests in FastAPI: https://www.reddit.com/r/htmx/comments/1dt4gum/best_practice_for_handling_routes_with_htmx_and/
+- Reddit: How to organize http paths used by htmx?: https://www.reddit.com/r/htmx/comments/1f3w95m/how_to_organize_http_paths_used_by_htmx/
+- Reddit: Best practices for organizing htmx attributes: https://www.reddit.com/r/htmx/comments/1edseop/best_practices_for_organizing_htmx_attributes/
+- Reddit: How to handle everything happening outside the happy path when using htmx?: https://www.reddit.com/r/htmx/comments/1bwjzjh/how_to_handle_everything_happening_outside_the/
+- Reddit: To those that use HTMX in production, how is it?: https://www.reddit.com/r/ExperiencedDevs/comments/1bomixd/to_those_that_use_htmx_in_production_how_is_it/
+- Reddit: What's a good open source, fully fledged example of a website with HTMX?: https://www.reddit.com/r/htmx/comments/1i6fdw8/whats_a_good_open_source_fully_fledge_example_of/
+- Hacker News discussion on htmx state, URLs, and backend views: https://news.ycombinator.com/item?id=41484286
