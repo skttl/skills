@@ -13,6 +13,7 @@ This repository is structured as a general skill collection. Each skill lives in
 | Frontend | [alpinejs](skills/frontend/alpinejs/) | Best-practice Alpine.js guidance for progressively enhanced, server-rendered interfaces. |
 | Frontend | [htmx-alpinejs](skills/frontend/htmx-alpinejs/) | Best-practice guidance for combining htmx server updates with Alpine.js local UI state. |
 | Frontend | [htmx](skills/frontend/htmx/) | Best-practice htmx guidance for server-rendered, hypermedia-driven interfaces. |
+| Umbraco | [umbraco-friendly-schema](skills/umbraco/umbraco-friendly-schema/) | Create, review, and carefully improve editor-friendly Umbraco schema names, labels, and descriptions. |
 | Umbraco | [umbraco-package-scaffold](skills/umbraco/umbraco-package-scaffold/) | Scaffold or restructure an Umbraco community NuGet package with the recommended project layout. |
 | Umbraco | [umbraco-ufm](skills/umbraco/umbraco-ufm/) | Write, review, and advisory-verify Umbraco Flavored Markdown for Umbraco 17+ labels and schema files. |
 
@@ -58,6 +59,7 @@ Copy-Item -Recurse .\skills\codebase\legacy-codebase-audit $env:USERPROFILE\.cod
 Copy-Item -Recurse .\skills\frontend\alpinejs $env:USERPROFILE\.codex\skills\alpinejs
 Copy-Item -Recurse .\skills\frontend\htmx-alpinejs $env:USERPROFILE\.codex\skills\htmx-alpinejs
 Copy-Item -Recurse .\skills\frontend\htmx $env:USERPROFILE\.codex\skills\htmx
+Copy-Item -Recurse .\skills\umbraco\umbraco-friendly-schema $env:USERPROFILE\.codex\skills\umbraco-friendly-schema
 Copy-Item -Recurse .\skills\umbraco\umbraco-package-scaffold $env:USERPROFILE\.codex\skills\umbraco-package-scaffold
 Copy-Item -Recurse .\skills\umbraco\umbraco-ufm $env:USERPROFILE\.codex\skills\umbraco-ufm
 ```
@@ -81,6 +83,7 @@ cp -R skills/codebase/legacy-codebase-audit ~/.claude/skills/legacy-codebase-aud
 cp -R skills/frontend/alpinejs ~/.claude/skills/alpinejs
 cp -R skills/frontend/htmx-alpinejs ~/.claude/skills/htmx-alpinejs
 cp -R skills/frontend/htmx ~/.claude/skills/htmx
+cp -R skills/umbraco/umbraco-friendly-schema ~/.claude/skills/umbraco-friendly-schema
 cp -R skills/umbraco/umbraco-package-scaffold ~/.claude/skills/umbraco-package-scaffold
 cp -R skills/umbraco/umbraco-ufm ~/.claude/skills/umbraco-ufm
 ```
@@ -128,6 +131,10 @@ skills/
       SECURITY_AND_ACCESSIBILITY.md
       REFERENCES.md
   umbraco/
+    umbraco-friendly-schema/
+      SKILL.md
+      README.md
+      scripts/
     umbraco-package-scaffold/
       SKILL.md
       README.md
