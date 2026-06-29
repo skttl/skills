@@ -2,7 +2,7 @@
 
 A small collection of reusable skills for coding agents.
 
-This repository started as an Alpine.js skill, but it is now structured as a general skill collection. Each skill lives in its own directory with a `SKILL.md` entry point and any deeper references beside it.
+This repository is structured as a general skill collection. Each skill lives in its own directory with a `SKILL.md` entry point and any deeper references beside it.
 
 ## Available Skills
 
@@ -11,6 +11,7 @@ This repository started as an Alpine.js skill, but it is now structured as a gen
 | Frontend | [alpinejs](skills/frontend/alpinejs/) | Best-practice Alpine.js guidance for progressively enhanced, server-rendered interfaces. |
 | Frontend | [htmx-alpinejs](skills/frontend/htmx-alpinejs/) | Best-practice guidance for combining htmx server updates with Alpine.js local UI state. |
 | Frontend | [htmx](skills/frontend/htmx/) | Best-practice htmx guidance for server-rendered, hypermedia-driven interfaces. |
+| Umbraco | [umbraco-package-scaffold](skills/umbraco/umbraco-package-scaffold/) | Scaffold or restructure an Umbraco community NuGet package with the recommended project layout. |
 
 ## Installation
 
@@ -20,9 +21,10 @@ Copy the skill directory you want into your agent's skills folder. For example:
 Copy-Item -Recurse .\skills\frontend\alpinejs $env:USERPROFILE\.codex\skills\alpinejs
 Copy-Item -Recurse .\skills\frontend\htmx-alpinejs $env:USERPROFILE\.codex\skills\htmx-alpinejs
 Copy-Item -Recurse .\skills\frontend\htmx $env:USERPROFILE\.codex\skills\htmx
+Copy-Item -Recurse .\skills\umbraco\umbraco-package-scaffold $env:USERPROFILE\.codex\skills\umbraco-package-scaffold
 ```
 
-For Claude Code, copy the matching folder into `~/.claude/skills/alpinejs`, `~/.claude/skills/htmx-alpinejs`, or `~/.claude/skills/htmx`.
+For Claude Code, copy the matching folder into `~/.claude/skills/alpinejs`, `~/.claude/skills/htmx-alpinejs`, `~/.claude/skills/htmx`, or `~/.claude/skills/umbraco-package-scaffold`.
 
 If you use a skill installer that understands GitHub skill repositories, install this repository and select the skills you want.
 
@@ -54,6 +56,11 @@ skills/
       ATTRIBUTES_AND_PATTERNS.md
       SECURITY_AND_ACCESSIBILITY.md
       REFERENCES.md
+  umbraco/
+    umbraco-package-scaffold/
+      SKILL.md
+      README.md
+      references/
 ```
 
 ## Skill Format

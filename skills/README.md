@@ -7,3 +7,4 @@ Skills are grouped by category. Each skill directory contains a `SKILL.md` file 
 | Category | Skills |
 | --- | --- |
 | [frontend](frontend/) | [alpinejs](frontend/alpinejs/), [htmx-alpinejs](frontend/htmx-alpinejs/), [htmx](frontend/htmx/) |
+| [umbraco](umbraco/) | [umbraco-package-scaffold](umbraco/umbraco-package-scaffold/) |
