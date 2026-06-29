@@ -15,18 +15,72 @@ This repository is structured as a general skill collection. Each skill lives in
 
 ## Installation
 
-Copy the skill directory you want into your agent's skills folder. For example:
+### skills.sh
+
+Install the full repository from [skills.sh](https://www.skills.sh/) with the `skills` CLI:
+
+```bash
+npx skills add skttl/skills
+```
+
+Run the command from the project root where you want the skills available, then start a new agent session.
+
+To opt out of installer telemetry:
+
+```bash
+DISABLE_TELEMETRY=1 npx skills add skttl/skills
+```
+
+In PowerShell:
 
 ```powershell
+$env:DISABLE_TELEMETRY = "1"
+npx skills add skttl/skills
+```
+
+### Codex
+
+For project-local installation, run the skills CLI from your project root:
+
+```bash
+npx skills add skttl/skills
+```
+
+For a manual user-level installation, copy each skill directory into your Codex skills folder:
+
+```powershell
+New-Item -ItemType Directory -Force $env:USERPROFILE\.codex\skills
 Copy-Item -Recurse .\skills\frontend\alpinejs $env:USERPROFILE\.codex\skills\alpinejs
 Copy-Item -Recurse .\skills\frontend\htmx-alpinejs $env:USERPROFILE\.codex\skills\htmx-alpinejs
 Copy-Item -Recurse .\skills\frontend\htmx $env:USERPROFILE\.codex\skills\htmx
 Copy-Item -Recurse .\skills\umbraco\umbraco-package-scaffold $env:USERPROFILE\.codex\skills\umbraco-package-scaffold
 ```
 
-For Claude Code, copy the matching folder into `~/.claude/skills/alpinejs`, `~/.claude/skills/htmx-alpinejs`, `~/.claude/skills/htmx`, or `~/.claude/skills/umbraco-package-scaffold`.
+Restart Codex after installing.
 
-If you use a skill installer that understands GitHub skill repositories, install this repository and select the skills you want.
+### Claude Code
+
+For project-local installation, run the skills CLI from your project root:
+
+```bash
+npx skills add skttl/skills
+```
+
+For a manual user-level installation, copy each skill directory into your Claude Code skills folder:
+
+```bash
+mkdir -p ~/.claude/skills
+cp -R skills/frontend/alpinejs ~/.claude/skills/alpinejs
+cp -R skills/frontend/htmx-alpinejs ~/.claude/skills/htmx-alpinejs
+cp -R skills/frontend/htmx ~/.claude/skills/htmx
+cp -R skills/umbraco/umbraco-package-scaffold ~/.claude/skills/umbraco-package-scaffold
+```
+
+Restart Claude Code after installing.
+
+### Other Agents
+
+For agents that support the `SKILL.md` convention, copy the skill directory you need into that agent's configured skills folder. Keep each skill directory intact so sibling reference files, scripts, and assets stay next to `SKILL.md`.
 
 ## Repository Layout
 
