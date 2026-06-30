@@ -23,6 +23,7 @@ Before writing or changing UFM, inspect the schema or nearby examples and answer
 
 - Is this a block label, collection view label template, or property description?
 - Which property aliases are available in the current value context?
+- For block and nested-content labels, resolve the configured element type first. In Umbraco Deploy `.uda`, use `contentElementTypeKey` to find the matching `document-type__*.uda`, then inspect that content type's property aliases and editor-facing names before choosing label text or fallbacks.
 - Are picker names, link titles, form names, settings, or rich text values involved?
 - Is this plain display, lightweight formatting, or real conditional logic?
 
@@ -41,7 +42,7 @@ ${ $index + 1 }. Image: ${ caption | fallback:Untitled }
 - Prefer built-in components for built-in lookup behavior: `umbValue`, `umbContentName`, `umbLink`, `umbLocalize`, and `umbFormName`.
 - Use `${ ... }` expressions for real logic, property drilling, calculations, settings, or `$index`.
 - Keep labels short and scannable. Avoid full sentences and dense conditionals in block labels.
-- Use `fallback` for editor-facing empty states instead of allowing blank labels.
+- Use `fallback` for editor-facing empty states instead of allowing blank labels, but prefer a meaningful property fallback over hardcoded text when the underlying content type has one. For example, a heading can fall back to a link title, picker name, caption, short description, or stripped rich text excerpt before using `Untitled`/`Empty`.
 - For rich text, strip markup and limit output. Use `${ bodyText.markup | stripHtml | wordLimit:12 }` when the raw rich text object is available.
 - Do not use legacy AngularJS labels such as `{{ heading | ncNodeName }}`.
 - Do not use kebab-case filters such as `strip-html`, `title-case`, or `word-limit` for Umbraco 17+.
@@ -53,8 +54,9 @@ When reviewing existing UFM:
 1. Find UFM in Umbraco Deploy `.uda` files and `**/uSync/**` schema files.
 2. Check syntax first: balanced `{component: value}` and `${ expression }`, no accidental AngularJS, and no deprecated filter aliases.
 3. Check semantics: picker values use picker-aware components, rich text is not rendered raw, and fallbacks exist where empty labels would hurt editors.
-4. Check editor experience: can an editor scan a list of similar blocks and identify the right item quickly?
-5. If built-ins are not enough, recommend a custom UFM component or filter, but keep code generation secondary and use an Umbraco backoffice extension skill for implementation.
+4. For each hardcoded fallback, inspect the underlying content type for a better fallback candidate. Prefer content already meaningful to editors: link picker names (`link.name`), picked content names via `umbContentName`, captions, headings, short descriptions, or stripped/truncated rich text.
+5. Check editor experience: can an editor scan a list of similar blocks and identify the right item quickly?
+6. If built-ins are not enough, recommend a custom UFM component or filter, but keep code generation secondary and use an Umbraco backoffice extension skill for implementation.
 
 Run the advisory verifier when schema files are present:
 
