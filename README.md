@@ -13,9 +13,9 @@ This repository is structured as a general skill collection. Each skill lives in
 | Frontend | [alpinejs](skills/frontend/alpinejs/) | Best-practice Alpine.js guidance for progressively enhanced, server-rendered interfaces. |
 | Frontend | [htmx-alpinejs](skills/frontend/htmx-alpinejs/) | Best-practice guidance for combining htmx server updates with Alpine.js local UI state. |
 | Frontend | [htmx](skills/frontend/htmx/) | Best-practice htmx guidance for server-rendered, hypermedia-driven interfaces. |
-| Umbraco | [umbraco-friendly-schema](skills/umbraco/umbraco-friendly-schema/) | Create, review, and carefully improve editor-friendly Umbraco schema names, labels, and descriptions. |
+| Umbraco | [umbraco-friendly-schema](skills/umbraco/umbraco-friendly-schema/) | Create, review, and carefully improve editor-friendly Umbraco schema names, labels, and descriptions, with optional Umbraco MCP context. |
 | Umbraco | [umbraco-package-scaffold](skills/umbraco/umbraco-package-scaffold/) | Scaffold or restructure an Umbraco community NuGet package with the recommended project layout. |
-| Umbraco | [umbraco-ufm](skills/umbraco/umbraco-ufm/) | Write, review, and advisory-verify Umbraco Flavored Markdown for Umbraco 17+ labels and schema files. |
+| Umbraco | [umbraco-ufm](skills/umbraco/umbraco-ufm/) | Write, review, and advisory-verify Umbraco Flavored Markdown for Umbraco 17+ labels and schema files, with optional Umbraco MCP context. |
 
 ## Installation
 

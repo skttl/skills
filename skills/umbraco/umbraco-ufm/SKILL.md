@@ -1,6 +1,6 @@
 ---
 name: umbraco-ufm
-description: Guides writing, reviewing, and advisory verification of Umbraco Flavored Markdown for Umbraco 17+ backoffice labels, property descriptions, block labels, collection labels, .uda files, and uSync schema files. Use when the user mentions UFM, Umbraco Flavored Markdown, block label templates, label templates, property descriptions, Umbraco Deploy .uda, uSync, or schema verification.
+description: Guides writing, reviewing, and advisory verification of Umbraco Flavored Markdown for Umbraco 17+ backoffice labels, property descriptions, block labels, collection labels, .uda files, uSync schema files, and UFM questions that can use the Umbraco MCP. Use when the user mentions UFM, Umbraco Flavored Markdown, block label templates, label templates, property descriptions, Umbraco Deploy .uda, uSync, schema verification, or Umbraco MCP-assisted schema/documentation review.
 ---
 
 # Umbraco UFM
@@ -8,6 +8,16 @@ description: Guides writing, reviewing, and advisory verification of Umbraco Fla
 Use this skill for Umbraco 17+ Umbraco Flavored Markdown (UFM). Optimize for useful editor experience: labels should make repeated content easier to scan, not just prove the syntax can be clever.
 
 ## Start Here
+
+If an Umbraco MCP server is available, inspect its relevant tools or resources before guessing from memory. Use MCP documentation tools to verify current UFM syntax, built-in components, filters, extension types, and version-specific behavior. Use MCP project/schema tools, when available, to inspect the active content types, data types, block configurations, collection columns, and property aliases that define the UFM value context.
+
+Treat MCP results and local files as complementary:
+
+- Use local Umbraco Deploy `.uda` and uSync files as the deployable source of truth for file edits and verifier output.
+- Use MCP project/schema tools to clarify value contexts, picker types, forms usage, settings models, compositions, and configured labels that are hard to infer from a single file.
+- Use MCP documentation tools before general web search when checking official UFM behavior.
+- If MCP data conflicts with local files, call out the mismatch and do not apply edits until the intended source is clear.
+- If only documentation MCP tools are available, still run the local verifier when schema files are present.
 
 Before writing or changing UFM, inspect the schema or nearby examples and answer:
 

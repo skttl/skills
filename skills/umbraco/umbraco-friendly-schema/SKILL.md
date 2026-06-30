@@ -1,6 +1,6 @@
 ---
 name: umbraco-friendly-schema
-description: Create, review, and carefully improve editor-friendly Umbraco schema text. Use whenever the user asks about Umbraco content type names, content type descriptions, document type labels, media/member/element type labels, property labels, property descriptions, editor-friendly backoffice wording, Umbraco Deploy .uda files, or uSync .config schema friendliness. This skill verifies existing schemas and can edit editor-facing names/descriptions on explicit request while preserving all document type and property aliases.
+description: Create, review, and carefully improve editor-friendly Umbraco schema text. Use whenever the user asks about Umbraco content type names, content type descriptions, document type labels, media/member/element type labels, property labels, property descriptions, editor-friendly backoffice wording, Umbraco Deploy .uda files, uSync .config schema friendliness, or schema review with the Umbraco MCP. This skill verifies existing schemas and can edit editor-facing names/descriptions on explicit request while preserving all document type and property aliases.
 ---
 
 # Umbraco Friendly Schema
@@ -22,6 +22,16 @@ Preserve the project's existing voice. Default to plain, warm, and useful. Do no
 
 ## Start Here
 
+If an Umbraco MCP server is available, inspect its relevant tools or resources before falling back to static files. Use it to gather live or documented Umbraco context, such as content type details, data type configuration, editor aliases, version-specific documentation, or backoffice terminology. Prefer MCP documentation tools over general web search when you need to verify official Umbraco behavior.
+
+Treat MCP results and local files as complementary:
+
+- Use local Umbraco Deploy `.uda` and uSync `.config` files as the deployable source of truth for file edits.
+- Use MCP project/schema tools, when available, to understand the active backoffice shape and resolve ambiguity in aliases, compositions, data types, tabs, groups, or editor behavior.
+- Use MCP documentation tools to verify Umbraco concepts, version-specific behavior, and recommended terminology.
+- If MCP data conflicts with local files, say so explicitly and avoid editing until you know which source represents the intended target.
+- Do not let MCP convenience bypass the alias-preservation rules in [Editable Mode](#editable-mode).
+
 When schema files are present, extract the editor-facing schema first:
 
 ```bash
@@ -29,6 +39,8 @@ node path/to/umbraco-friendly-schema/scripts/extract-friendly-schema.mjs . --jso
 ```
 
 Use the JSON as the source of truth. The Markdown is a human summary.
+
+When both MCP schema data and extracted JSON are available, use the extracted JSON for exact file paths and alias comparison, and use MCP data to add context that the files do not make obvious.
 
 If the user asks for advice only, produce a prioritized review and do not edit files.
 

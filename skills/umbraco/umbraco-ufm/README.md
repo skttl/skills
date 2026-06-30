@@ -9,6 +9,7 @@ Use this skill when working with:
 - Property descriptions that use UFM.
 - Umbraco Deploy `.uda` schema files.
 - uSync schema files under `uSync` folders.
+- UFM reviews that can use an Umbraco MCP server for live project or documentation context.
 - Migration away from old AngularJS label templates, when the target is Umbraco 17+.
 
 ## Contents
@@ -31,6 +32,10 @@ It scans only known Umbraco schema locations:
 - files under a `uSync` directory
 
 The output is human-readable and advisory. It reports syntax errors and warnings with file, line, rule, and a suggested action where possible. It does not rewrite files.
+
+## Umbraco MCP
+
+When an Umbraco MCP server is available, use it before guessing. MCP documentation tools can verify current UFM syntax, components, filters, and extension behavior. MCP project/schema tools, when available, can clarify the value context for block labels, collection columns, picker properties, forms, settings, and custom components. Local schema files remain the source of truth for edits and verifier output.
 
 ## Design Stance
 

@@ -9,6 +9,7 @@ Use this skill when working with:
 - Property labels and descriptions.
 - Umbraco Deploy `.uda` schema files.
 - uSync `.config` schema files.
+- Schema reviews that can use an Umbraco MCP server for live project or documentation context.
 - Backoffice wording reviews focused on content editors.
 
 ## Contents
@@ -32,6 +33,10 @@ The extractor scans:
 - `.config` files under a `uSync` directory
 
 It extracts likely document, element, media, and member type schema details: names, aliases, descriptions, icons, tabs, groups, properties, editors, mandatory flags, and file paths. It does not rewrite files and does not decide whether wording is friendly.
+
+## Umbraco MCP
+
+When an Umbraco MCP server is available, use it as supporting context before guessing. MCP project/schema tools can help clarify the active backoffice shape, while MCP documentation tools can verify version-specific Umbraco behavior. Local `.uda` and uSync files remain the source of truth for file edits and alias-preservation checks.
 
 ## Design Stance
 
