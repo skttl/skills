@@ -1,0 +1,6 @@
+interface:
+  display_name: "Umbraco package repository"
+  short_description: "Define repository structure for new Umbraco packages"
+  default_prompt: "Use $umbraco-package-repository to define the repository structure for my new Umbraco package."
+policy:
+  allow_implicit_invocation: false
